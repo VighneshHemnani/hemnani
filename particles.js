@@ -23,17 +23,17 @@ var pJS = function(tag_id, params){
         value: 2,
         density: {
           enable: true,
-          value_area: 100
+          value_area: 800
         }
       },
       color: {
-        value: '#fff'
+        value: '#6e6e6e'
       },
       shape: {
-        type: 'circle',
+        type: 'edge',
         stroke: {
           width: 0,
-          color: '#ff0000'
+          color: '#6e6e6e'
         },
         polygon: {
           nb_sides: 5
@@ -67,7 +67,7 @@ var pJS = function(tag_id, params){
       line_linked: {
         enable: true,
         distance: 100,
-        color: '#fff',
+        color: '#6e6e6e',
         opacity: 1,
         width: 1
       },
@@ -228,7 +228,7 @@ var pJS = function(tag_id, params){
 
 
   pJS.fn.canvasPaint = function(){
-    pJS.canvas.ctx.fillRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+    pJS.canvas.ctx.fillRect(0, 0, pJS.canvas.w, pJS.canvas.h+50);
   };
 
   pJS.fn.canvasClear = function(){
